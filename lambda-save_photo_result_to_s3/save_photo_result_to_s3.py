@@ -14,8 +14,8 @@ CRITICAL	50	프로그램이 동작할 수 없을 정도의 심각한 문제.
 '''
 logging.basicConfig(level=logging.INFO)
 #----------------------------------------------------------------------
-ACCESS_ID = 'AKIA2SOSJQPLMOBMOLER'
-ACCESS_KEY = '2RnW+fgt+6ysuNoAz4zDJBdkmHeXvddWYL0b7BN8'
+ACCESS_ID = ''
+ACCESS_KEY = ''
 BUCKET_NAME = "photo-product-line-1"
 FOLDER_NAME = '2020-12-02'
 FILE_NAME = '2020-12-02-05-12-01-1.jpg'
