@@ -1,5 +1,6 @@
 import os
 import requests
+import json
 
 
 url = 'http://localhost:8000/getimage/'
@@ -10,3 +11,7 @@ with open(path_img, 'rb') as img:
     with requests.Session() as s:
         r = s.post(url,files=files)
         print(r.status_code)
+        print(r.text)
+    response_dict = json.loads(r.text)
+    print(response_dict)
+    print(response_dict['time'])

@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from django.http import HttpResponse, JsonResponse
 from django.core.files.storage import default_storage
 
 
@@ -19,4 +18,11 @@ def get_image(request):
             for chunk in file_obj.chunks():
                 destination.write(chunk)
     
-    return HttpResponse("success")
+    # 판별기
+
+    percentage = 36.36
+    if percentage < 50:
+        result = 0
+    result = {'result':'0', 'percentage': percentage, 'time':'2020-11-14'}
+
+    return JsonResponse(result)
