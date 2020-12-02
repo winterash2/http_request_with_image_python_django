@@ -3,6 +3,7 @@ from django.http import HttpResponse, JsonResponse
 from django.core.files.storage import default_storage
 
 
+
 def get_image(request):
     print(request)
     print(request.POST)
